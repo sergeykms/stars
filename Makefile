@@ -1,4 +1,4 @@
-serve:
+serv:
 	php artisan serve
 
 migrate:
