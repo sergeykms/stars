@@ -1,2 +1,43 @@
+@import "fonts/stylesheet.css";
 @import "bootstrap.min.css";
 @import "main.css";
+
+:root {
+    /*Цвета*/
+    --appMainColor: #492e20; /*Основной цвет приложения*/
+    --mainTextColor: #201708; /*Цвет основного текста*/
+    --mainAccentColor: #0a2079; /*Цвет акцентного текста*/
+    --backgroundCardColor: #e7e1db; /*Цвет бэкграунда карточки*/
+
+    --mainColor: #937153; /*Главный цвет*/
+    --textColorLink: #215be3; /*Цвет ссылок*/
+    --textColorMenuSidebar: var(--appMainColor); /*Цвет текста меню сайдбара*/
+
+    --backgroundColor: #faf7f2; /*Цвет заднего фона*/
+    --mainMenuColor: #4d3d26; /*Цвет текста меню*/
+    --borderColor: var(--mainColor); /*Цвет бордюра*/
+
+    /*Хедер*/
+    --headerColor: #5d4822; /*Цвет текста хедера*/
+
+    /*Error*/
+    --errorTextColor: #d90f2f; /*Цвет сообщения об ошибках*/
+
+    /*Кнопки*/
+    --buttonEnabledColor: #704510; /*Цвет активной кнопки*/
+    --buttonDisabledColor: #faf7f2; /*Цвет неактивной кнопки*/
+    --buttonTextColor: #faf7f2; /*Цвет текста кнопки*/
+
+    /*PopupDialogue*/
+    --backgroundPopupColor: #f8f8f8; /*Цвет заднего фона PopupDialogue*/
+
+    /*Типографика*/
+    --mainFontFamily: Verona, Arial, sans-serif;
+    --navigateFontFamily: "Cormorant Infant", Arial, sans-serif;
+
+    /*Ширина экрана*/
+    --win-mobile: 486px;
+    --win-tablet: 924px;
+    --win-laptop: 1024px;
+    --win-large: 1440px;
+}
