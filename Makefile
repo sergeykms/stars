@@ -3,3 +3,6 @@ serv:
 
 migrate:
 	php artisan migrate
+
+comp:
+	php artisan make:component --view

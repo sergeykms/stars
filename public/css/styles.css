@@ -1,5 +1,7 @@
 @import "fonts/stylesheet.css";
 @import "bootstrap.min.css";
+@import "layout/layout.css";
+
 @import "main.css";
 
 :root {

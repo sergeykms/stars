@@ -1,6 +1,6 @@
 .test {
     color: var(--headerColor);
-    /*font-family: var(--mainFontFamily);*/
-    font-family: var(--navigateFontFamily);
+    /*font-family: var(--mainFontFamily), Arial, sans-serif;*/
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
 }
 

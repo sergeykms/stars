@@ -1,0 +1,16 @@
+.header {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 20px;
+    background-color: var(--appMainColor);
+    /*align-items: center;*/
+    /*position: fixed; !* Сделайте его липким/фиксированным *!*/
+    /*width: 100%; !* Полная ширина *!*/
+}
+
+.header__logo {
+    /*grid-column: 2/3;*/
+    width: 70px;
+    height: auto;
+}
