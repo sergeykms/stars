@@ -1,5 +1,5 @@
 <nav class="header">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <img src="{{ asset('../../../images/logo-light.svg') }}"
              class="header__logo"
              alt="Логотип">

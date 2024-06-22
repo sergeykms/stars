@@ -6,3 +6,9 @@ migrate:
 
 comp:
 	php artisan make:component --view
+
+key:
+	php artisan key:generate
+
+update:
+	composer update
