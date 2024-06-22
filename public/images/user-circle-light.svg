@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<title>user-circle</title>
+	<defs>
+		<image  width="44" height="44" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsAQMAAAAkSshCAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA+vfyFXqrgwAAAAJ0Uk5TAP9bkSK1AAAAp0lEQVR4nGXQsQ2DMBAF0G9RuGQEL4JgLQokwySs4mziKH1kKUVcRPz8QxCKuPAr7mzdfQAxQ6fhx2hJYyCTYBoK4Db4qo4Kpx5fwrypMcU8iIU1AEHP2/mk99x8QieahMnIGIX7UY2CIvCHzXLhWPdafBrtuooaclwKRs1505+RvGdM4pHRkXwl9OKdEATnk9bAide92eq05Z2otjRZrgiOQI549rC+B/STQ4/OE5wAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="2" y="2"/>
+</svg>

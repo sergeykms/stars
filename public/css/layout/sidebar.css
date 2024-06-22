@@ -1,0 +1,26 @@
+.sidebar__navigate {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__item {
+    margin: 0;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: var(--textColorMenuSidebar);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sidebar__item:visited {
+    color: var(--textColorMenuSidebar);
+}
+
+.sidebar__item:hover {
+    background-color: var(--appMainColor);
+    color: var(--backgroundColor);
+}
+

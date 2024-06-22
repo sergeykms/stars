@@ -1,0 +1,8 @@
+.footer__text {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    color: var(--textColorMenuSidebar);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.3rem;
+}

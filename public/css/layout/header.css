@@ -2,15 +2,62 @@
 
     box-sizing: border-box;
     margin: 0;
-    padding: 5px 20px;
+    padding: .3rem 1rem;
     background-color: var(--appMainColor);
-    /*align-items: center;*/
-    /*position: fixed; !* Сделайте его липким/фиксированным *!*/
-    /*width: 100%; !* Полная ширина *!*/
+    display: grid;
+    grid-template: max-content / max-content 1fr max-content;
 }
 
 .header__logo {
-    /*grid-column: 2/3;*/
+    grid-column: 1/2;
     width: 70px;
     height: auto;
+}
+
+.header__user {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.header__user-pic {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.header__user-name {
+    margin: 0;
+    padding: 0;
+    color: var(--backgroundColor);
+    align-self: center;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.header__user-menu {
+    box-sizing: border-box;
+    border: 1px solid var(--borderColor);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header__user-menu-divider {
+    border: solid 1px var(--borderColor);
+}
+
+.header__user-menu-item {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--headerColor);
+}
+
+.header__user-menu-item_bold {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 600;
 }
