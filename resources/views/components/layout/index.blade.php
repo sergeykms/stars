@@ -9,7 +9,13 @@
     </div>
 
     <x-layout.main>
-        <h1 style="color: #6f42c1">Hello</h1>
+        @auth()
+            <h1>Авторизован</h1>
+        @endauth
+
+        @guest()
+            <h1>Гость</h1>
+        @endguest
     </x-layout.main>
 
     <div class="layout__footer">

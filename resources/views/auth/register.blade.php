@@ -1,36 +1,41 @@
 <x-auth>
-    <form action="#" method="post" class="auth__form">
+    <form action="{{ route('register') }}" method="post" class="auth__form">
+        @csrf
         <h2 class="auth__title">Да пребудет с тобой сила!</h2>
         <p class="auth__name">Имя</p>
         <input type="text"
-               class="auth__input"
-               name="userName"
+               class="auth__input @error('name') auth__input_error @enderror"
+               value="{{ old( 'name') }}"
+               name="name"
                placeholder="введите имя пользователя"/>
-        {{--        <p className={styles.login__inputError}>{errorMessageEmail}</p>--}}
+        @error('name')
+        <p class="auth__input-error">{{ $message }}</p>
+        @enderror
         <p class="auth__name">E-mail</p>
         <input type="text"
-               class="auth__input"
+               class="auth__input @error('email') auth__input_error @enderror"
+               value="{{ old( 'email') }}"
                name="email"
                placeholder="введите е-mail"/>
-        {{--        <p className={styles.login__inputError}>{errorMessageEmail}</p>--}}
+        @error('email')
+        <p class="auth__input-error">{{ $message }}</p>
+        @enderror
         <p class="auth__name">Пароль</p>
         <input type="password"
-               class="auth__input"
+               class="auth__input @error('password') auth__input_error @enderror"
                name="password"
                placeholder="введите пароль"/>
-        {{--        <p className={styles.login__inputError}>{errorMessagePassword}</p>--}}
-        {{--        <p className={styles.login__error}>{currentError}</p>--}}
+        @error('password')
+        <p class="auth__input-error">{{ $message }}</p>
+        @enderror
         <p class="auth__name">Подтвердите пароль</p>
         <input type="password"
-               class="auth__input"
-               name="confirmated-password"
+               class="auth__input @error('password') auth__input_error @enderror"
+               name="password_confirmation"
                placeholder="повторите пароль"/>
-        {{--        <p className={styles.login__inputError}>{errorMessagePassword}</p>--}}
-        {{--        <p className={styles.login__error}>{currentError}</p>--}}
         <button type="submit"
                 aria-label="submit"
-                class="auth__submit"
-                name="form_submit">
+                class="auth__submit">
             Зарегистрироваться
         </button>
         <p class="auth__name">Уже зарегистрированы?&nbsp;

@@ -12,3 +12,6 @@ key:
 
 update:
 	composer update
+
+contr:
+	php artisan make:controller
