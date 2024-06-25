@@ -10,7 +10,6 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
-
         // Валидация
         $fields = $request->validate([
             'name' => ['required', 'max:255'],
@@ -25,6 +24,32 @@ class AuthController extends Controller
         Auth::login($user);
 
         // Редирект
-        return redirect() -> route('welcome');
+        return redirect()->route('welcome');
+    }
+
+    public function login(Request $request)
+    {
+        // Валидация
+        $fields = $request->validate([
+            'email' => ['required', 'email', 'max:255'],
+            'password' => ['required', 'string', 'min:3'],
+        ]);
+
+        // Авторизация
+        if (Auth::attempt($fields, $request->get('remember'))) {
+            return redirect()->intended();
+        } else {
+            return redirect()->route('login')->withErrors([
+                'failed' => 'Пользователь с такими учетными данным не найден',
+            ]);
+        }
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
     }
 }

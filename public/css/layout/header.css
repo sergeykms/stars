@@ -61,3 +61,20 @@
     padding-bottom: 0;
     font-weight: 600;
 }
+
+.header__button {
+    text-decoration: none;
+    color: var(--backgroundColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header__button:hover {
+    color: var(--backgroundColor);
+    opacity: .5;
+}
+
+.header__button:visited {
+    color: var(--backgroundColor);
+}
