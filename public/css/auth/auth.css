@@ -1,5 +1,5 @@
 .auth {
-    min-height: 100vh;
+    min-height: 85vh;
     font-family: var(--mainFontFamily), Arial, sans-serif;
     box-sizing: border-box;
     padding: 0;
@@ -9,10 +9,17 @@
     font-size: 3rem;
 }
 
-.auth__form {
-    font-family: var(--navigateFontFamily), Arial, sans-serif;
+.auth__block-form {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.auth__form {
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    /*grid-row: 1/2;*/
+    /*grid-column: 1/2;*/
     margin: 0;
     padding: 0 7rem;
     display: flex;
