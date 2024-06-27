@@ -15,3 +15,6 @@ update:
 
 contr:
 	php artisan make:controller
+
+list:
+	php artisan route:list
