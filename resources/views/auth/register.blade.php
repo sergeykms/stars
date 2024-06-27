@@ -41,9 +41,5 @@
         <p class="auth__name">Уже зарегистрированы?&nbsp;
             <a class="auth__link" href='{{ 'login' }}'>Вход</a>
         </p>
-
-        {{--        <Link className={styles.login__link} to='/resetpassword'>Забыли пароль?</Link>--}}
     </form>
 </x-auth>
-
-

@@ -24,7 +24,7 @@ class AuthController extends Controller
         Auth::login($user);
 
         // Редирект
-        return redirect()->route('home');
+        return redirect()->intended('/');
     }
 
     public function login(Request $request)
@@ -37,7 +37,7 @@ class AuthController extends Controller
 
         // Авторизация
         if (Auth::attempt($fields, $request->get('remember'))) {
-            return redirect()->intended('home');
+            return redirect()->intended('/');
         } else {
             return redirect()->route('login')->withErrors([
                 'failed' => 'Пользователь с такими учетными данным не найден',
@@ -51,10 +51,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect('/');
-    }
-
-    public function home() {
-        return view('home');
     }
 
 }

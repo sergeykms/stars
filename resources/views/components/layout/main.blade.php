@@ -1,8 +1,5 @@
 <div class="layout__main">
-
     <main>
-
-        {{$slot}}
-
+        {{ $slot }}
     </main>
 </div>

@@ -1,8 +1,5 @@
 <div class="sidebar__navigate">
     <a href="#" class="sidebar__item">
-        Главная
-    </a>
-    <a href="#" class="sidebar__item">
         Фильмы
     </a>
     <a href="#" class="sidebar__item">
