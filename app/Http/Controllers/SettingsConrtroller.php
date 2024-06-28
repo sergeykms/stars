@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SettngsConrtroller extends Controller
+class SettingsConrtroller extends Controller
 {
     public function index() {
         return view('users.settings');

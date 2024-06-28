@@ -23,7 +23,7 @@
                     <hr class="header__user-menu-divider">
                 </li>
                 <li><a class="dropdown-item header__user-menu-item" href="{{ route('settings') }}">Страница пользователя</a></li>
-                <li><a class="dropdown-item header__user-menu-item" href="#">Админ панель</a></li>
+                <li><a class="dropdown-item header__user-menu-item" href="{{ route ('admin') }}">Админ. панель</a></li>
                 <li>
                     <hr class="header__user-menu-divider">
                 </li>

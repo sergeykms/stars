@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUserInfoRequest;
 use App\Http\Requests\UpdateUserInfoRequest;
+use App\Models\User;
 use App\Models\UserInfo;
 
 class UserInfoController extends Controller
@@ -11,9 +12,10 @@ class UserInfoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
-        //
+        $users = User::all();
+        return view('admin/users_list', ['users' => $users]);
     }
 
     /**
