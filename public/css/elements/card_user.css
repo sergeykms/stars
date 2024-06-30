@@ -1,0 +1,65 @@
+.card-user {
+    margin: 0;
+    padding: 0;
+    border: solid 1px var(--borderColor);
+    width: 24rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-user__head {
+    margin: 0;
+    padding: .5rem;
+    background-color: var(--appMainColor);
+    border-bottom: solid 1px var(--borderColor);
+    color: var(--backgroundColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-user__body {
+    margin: 0;
+    padding: .5rem;
+
+}
+
+.card-user__email {
+    margin: 0;
+    padding: .5rem 0;
+    color: var(--appMainColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    /*display: inline;*/
+    /*align-self: baseline;*/
+    text-align: center;
+    border-bottom: solid 1px var(--borderColor);
+}
+
+.card-user__title {
+    margin: 0;
+    padding: 0;
+    color: var(--appMainColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    display: inline;
+    align-self: baseline;
+    /*border-bottom: solid 1px var(--borderColor);*/
+}
+
+.card-user__text {
+    margin: 0;
+    padding: 0;
+    color: var(--appMainColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    font-weight: 600;
+    display: inline;
+    align-self: baseline;
+}

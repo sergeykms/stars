@@ -18,3 +18,9 @@ contr:
 
 list:
 	php artisan route:list
+
+tink:
+	php artisan tinker
+
+model:
+		php artisan make:model

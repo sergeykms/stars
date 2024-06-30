@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreFilmsRequest;
-use App\Http\Requests\UpdateFilmsRequest;
 use App\Models\Films;
+use Illuminate\Http\Request;
 
-class FilmsController extends Controller
+class FilmController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +26,7 @@ class FilmsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreFilmsRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -51,7 +50,7 @@ class FilmsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateFilmsRequest $request, Films $films)
+    public function update(Request $request, Films $films)
     {
         //
     }

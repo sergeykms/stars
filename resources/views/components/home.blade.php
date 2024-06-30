@@ -4,7 +4,7 @@
     </div>
 
     <div style="grid-row: 1/2; grid-column: 2/3">
-        <h1>Авторизован</h1>
+        <x-elements.title>Пользователь авторизован</x-elements.title>
     </div>
 </div>
 

@@ -1,0 +1,9 @@
+.elements-title {
+    margin: 0;
+    padding: 1rem;
+    color: var(--appMainColor);
+    font-family: var(--mainFontFamily), Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}

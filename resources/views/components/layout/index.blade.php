@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 
-<body>
+<body class="root">
 
 <div class="layout">
     <div class="layout__header">

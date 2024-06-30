@@ -3,7 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SettingsConrtroller;
-use App\Http\Controllers\UserInfoController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('welcome');
@@ -11,11 +11,12 @@ Route::view('/', 'welcome')->name('welcome');
 Route::middleware('auth')->group(function () {
     Route::get('/settings', [SettingsConrtroller::class, 'index'])->name('settings');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-
     Route::get('/admin', [AdminController::class, 'index'])->name('admin');
-    Route::get('/admin/users', [AdminController::class, 'adminUsers'])->name('admin_users');
+    Route::get('/admin/users', [AdminController::class, 'admin_users'])->name('admin_users');
 
-    Route::get('/user_info', [UserInfoController::class, 'index'])->name('user_info');
+    Route::get('users_list', [UserController::class, 'users_list']) -> name('users_list');
+
+
 });
 
 Route::middleware('guest')->group(function () {
@@ -25,7 +26,6 @@ Route::middleware('guest')->group(function () {
     Route::post('/login', [AuthController::class, 'login']);
 });
 
-Route::resource('user_info', UserInfoController::class);
 
 
 

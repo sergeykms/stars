@@ -1,3 +1,3 @@
 <x-layout>
-    <h1>Settings</h1>
+    <x-elements.title>Настройки пользователя</x-elements.title>
 </x-layout>

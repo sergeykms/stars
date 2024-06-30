@@ -3,7 +3,8 @@
 @import "auth/auth.css";
 @import "layout/layout.css";
 @import "home.css";
-@import "main.css";
+@import "global.css";
+@import "elements/index.css";
 
 :root {
     /*Цвета*/

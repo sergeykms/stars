@@ -1,4 +1,4 @@
 <x-layout>
-    <h1>Панель администратора</h1>
-    <a href="{{ route('user_info.index') }}">Список пользователей</a>
+    <x-elements.title>Панель администратора</x-elements.title>
+    <a href="{{ route('users_list') }}">Список пользователей</a>
 </x-layout>
