@@ -1,0 +1,42 @@
+.tile {
+    margin: 0;
+    padding: .5rem;
+    background-color: var(--appMainColor);
+    width: 12rem;
+    height: 12rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease .2s;
+
+}
+
+.tile:visited {
+    color: var(--backgroundColor);
+    background-color: var(--appMainColor);
+}
+
+.tile:hover {
+    box-shadow: 15px 15px 20px 0 rgba(49, 41, 38, 0.8);
+    transform: translate(-2%, -2%);
+    transition: all ease .2s;
+}
+
+.tile__inner-block {
+    display: flex;
+    margin: 0;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: solid 1px var(--backgroundCardColor);
+}
+.tile__text {
+    margin: 0;
+    padding: 0;
+    font-family: var(--mainFontFamily), Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--backgroundColor);
+    text-align: center;
+}

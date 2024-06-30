@@ -11,9 +11,10 @@
     --appMainColor: #492e20; /*Основной цвет приложения*/
     --mainTextColor: #201708; /*Цвет основного текста*/
     --mainAccentColor: #0a2079; /*Цвет акцентного текста*/
+
     --backgroundCardColor: #e7e1db; /*Цвет бэкграунда карточки*/
 
-    --mainColor: #937153; /*Главный цвет*/
+    --mainColor: #4d4035; /*Главный цвет*/
     --textColorLink: #215be3; /*Цвет ссылок*/
     --textColorMenuSidebar: var(--appMainColor); /*Цвет текста меню сайдбара*/
 

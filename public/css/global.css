@@ -8,3 +8,33 @@
     background-color: var(--backgroundColor);
 }
 
+
+
+.g__block-1 {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--backgroundColor);
+}
+
+.g__title-1 {
+
+}
+
+.g__title-2 {
+    text-decoration: none;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.g__title-3 {
+
+}
+
+.g__text-1 {
+
+}
+
+.g__text-2 {
+
+}
