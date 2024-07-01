@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FilmController;
 use App\Http\Controllers\SettingsConrtroller;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +17,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('users_list', [UserController::class, 'users_list']) -> name('users_list');
 
-
+    Route::resource('films', FilmController::class);
 });
 
 Route::middleware('guest')->group(function () {
@@ -25,7 +26,6 @@ Route::middleware('guest')->group(function () {
     Route::view('/login', 'auth/login')->name('login');
     Route::post('/login', [AuthController::class, 'login']);
 });
-
 
 
 

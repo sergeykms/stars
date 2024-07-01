@@ -22,7 +22,8 @@
                 <li>
                     <hr class="header__user-menu-divider">
                 </li>
-                <li><a class="dropdown-item header__user-menu-item" href="{{ route('settings') }}">Страница пользователя</a></li>
+                <li><a class="dropdown-item header__user-menu-item" href="{{ route('settings') }}">Страница
+                        пользователя</a></li>
                 <li><a class="dropdown-item header__user-menu-item" href="{{ route ('admin') }}">Админ. панель</a></li>
                 <li>
                     <hr class="header__user-menu-divider">
@@ -33,7 +34,6 @@
                         <button class="dropdown-item header__user-menu-item" type="submit">
                             Выход
                         </button>
-{{--                        <a class="dropdown-item header__user-menu-item" href="{{ route('logout') }}">Выход</a>--}}
                     </form>
                 </li>
 
@@ -43,8 +43,24 @@
 
     @guest()
         <div class="header__user">
-            <a class="header__button" href="{{ route('login') }}">Вход</a>
-            <a class="header__button" href="{{ route('register') }}">Регистрация</a>
+            @php
+                $isActive = request()->is('login');
+            @endphp
+            <a href="{{ route('login') }}" @class([
+                'header__link header__link_active' => $isActive,
+                'header__link' => !$isActive,
+            ])>
+                Вход
+            </a>
+            @php
+                $isActive = request()->is('register');
+            @endphp
+            <a href="{{ route('register') }}" @class([
+                'header__link header__link_active' => $isActive,
+                'header__link' => !$isActive,
+            ])>
+                Регистрация
+            </a>
         </div>
     @endguest
 
