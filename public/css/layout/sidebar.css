@@ -16,13 +16,12 @@
     cursor: pointer;
 }
 
-.sidebar__item:visited {
-    color: var(--textColorMenuSidebar);
+.sidebar__item:hover {
+    color: var(--testColor);
 }
 
-.sidebar__item:hover {
-    /*background-color: var(--appMainColor);*/
-    /*color: var(--backgroundColor);*/
-    opacity: .7;
+.sidebar__item_active {
+    color: var(--backgroundCardColor);
+    background-color: var(--appMainColor);
 }
 

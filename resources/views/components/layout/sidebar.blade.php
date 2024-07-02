@@ -1,17 +1,28 @@
 <div class="sidebar__navigate">
-    <a href="#" class="sidebar__item">
+
+    <x-elements.sidebar_link href="{{ route('films.index') }}" :active="request()->is('films')">
         Фильмы
-    </a>
-    <a href="#" class="sidebar__item">
+    </x-elements.sidebar_link>
+
+    <x-elements.sidebar_link href="{{ route('planets.index') }}" :active="request()->is('planets')">
         Планеты
-    </a> <a href="#" class="sidebar__item">
+    </x-elements.sidebar_link>
+
+    <x-elements.sidebar_link href="{{ route('peoples.index') }}" :active="request()->is('peoples')">
         Персонажи
-    </a> <a href="#" class="sidebar__item">
+    </x-elements.sidebar_link>
+
+    <x-elements.sidebar_link href="{{ route('species.index') }}" :active="request()->is('species')">
         Расы
-    </a> <a href="#" class="sidebar__item">
+    </x-elements.sidebar_link>
+
+    <x-elements.sidebar_link href="{{ route('starships.index') }}" :active="request()->is('starships')">
         Звездолеты
-    </a> <a href="#" class="sidebar__item">
+    </x-elements.sidebar_link>
+
+    <x-elements.sidebar_link href="{{ route('vehicles.index') }}" :active="request()->is('vehicles')">
         Транспорт
-    </a>
+    </x-elements.sidebar_link>
+
 </div>
 
