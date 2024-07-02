@@ -1,14 +1,8 @@
 <x-layout>
     <x-home>
         <x-elements.title>Фильмы</x-elements.title>
-        Режиссер {{ $director }} год {{ $year }}
-        <ul>
-            @foreach($films as $film)
-                <li>
-                    {{ $film }}
-                </li>
-            @endforeach
-        </ul>
+
+        <a class="btn btn-primary" href="films/create">Создать</a>
 
     </x-home>
 </x-layout>

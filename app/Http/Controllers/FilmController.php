@@ -12,14 +12,14 @@ class FilmController extends Controller
      */
     public function index(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
-        $name = 'Стивен Спилберг';
-        $year = 1970;
-        $films = [
-            'film_1',
-            'film_2',
-            'film_3',
-        ];
-        return view('films.index', ['director' => $name, 'year' => $year, 'films' => $films]);
+//        $name = 'Стивен Спилберг';
+//        $year = 1970;
+//        $films = [
+//            'film_1',
+//            'film_2',
+//            'film_3',
+//        ];
+        return view('films.index');
     }
 
     /**
@@ -35,7 +35,9 @@ class FilmController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $films =$request->all();
+        Film::create($films);
+        return redirect('films');
     }
 
     /**
