@@ -5,6 +5,7 @@
 @import "home.css";
 @import "global.css";
 @import "elements/index.css";
+@import "pages/index.css";
 
 :root {
     /*Цвета*/
@@ -47,4 +48,8 @@
     --win-tablet: 924px;
     --win-laptop: 1024px;
     --win-large: 1440px;
+}
+
+html {
+    font-size: 16px;
 }

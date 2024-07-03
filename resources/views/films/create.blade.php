@@ -2,11 +2,15 @@
     <x-home>
         <x-elements.title>Добавление нового фильма</x-elements.title>
 
-        <form class="row g-3 container" method="POST" action="/films">
+        <form class="row g-3 container" method="POST" action="{{ route('films') }}">
             @csrf
             <div class="col-md-6">
                 <label for="name" class="form-label">Наименование</label>
                 <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="col-md-6">
+                <label for="episode" class="form-label">Эпизод</label>
+                <input type="text" class="form-control" id="episode" name="episode">
             </div>
             <div class="col-12">
                 <label for="description" class="form-label">Краткое содержание</label>
@@ -53,7 +57,5 @@
                 <button type="submit" class="btn btn-primary">Сохранить</button>
             </div>
         </form>
-
-
     </x-home>
 </x-layout>

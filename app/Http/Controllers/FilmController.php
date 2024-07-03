@@ -12,14 +12,8 @@ class FilmController extends Controller
      */
     public function index(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
     {
-//        $name = 'Стивен Спилберг';
-//        $year = 1970;
-//        $films = [
-//            'film_1',
-//            'film_2',
-//            'film_3',
-//        ];
-        return view('films.index');
+        $films = Film::all();
+        return view('films.index', ['films' => $films]);
     }
 
     /**
@@ -33,9 +27,9 @@ class FilmController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): \Illuminate\Foundation\Application|\Illuminate\Routing\Redirector|\Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse
     {
-        $films =$request->all();
+        $films = $request->all();
         Film::create($films);
         return redirect('films');
     }
@@ -59,9 +53,11 @@ class FilmController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Film $film)
+    public function update(Request $request, Film $film): \Illuminate\Foundation\Application|\Illuminate\Routing\Redirector|\Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse
     {
-        //
+        $films = $request->all();
+        $film->update($films);
+        return redirect('films');
     }
 
     /**
