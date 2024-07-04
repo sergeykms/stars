@@ -5,7 +5,6 @@
 
     <div style="grid-row: 1/2; grid-column: 2/3">
         {{ $slot }}
-{{--        <x-elements.title>Пользователь авторизован</x-elements.title>--}}
     </div>
 </div>
 

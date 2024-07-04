@@ -27,39 +27,40 @@
 .card-user__email {
     margin: 0;
     padding: .5rem 0;
-    color: var(--appMainColor);
     font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: 700;
-    /*display: inline;*/
-    /*align-self: baseline;*/
     text-align: center;
+    text-indent: 0;
     border-bottom: solid 1px var(--borderColor);
 }
 
 .card-user__title {
     margin: 0;
     padding: 0;
-    color: var(--appMainColor);
     font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: 700;
     display: inline;
     align-self: baseline;
-    /*border-bottom: solid 1px var(--borderColor);*/
+    text-align: left;
+    text-indent: 0;
 }
 
 .card-user__text {
     margin: 0;
     padding: 0;
-    color: var(--appMainColor);
     font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
     font-size: 1.2rem;
     line-height: 1.5rem;
-
     font-weight: 600;
     display: inline;
     align-self: baseline;
+    text-align: left;
+    text-indent: 0;
 }

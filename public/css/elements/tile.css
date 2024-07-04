@@ -51,7 +51,9 @@
     padding: 0;
     font-family: var(--mainFontFamily), Arial, sans-serif;
     font-size: 1.2rem;
+    line-height: 1.3rem;
     font-weight: 700;
     color: var(--backgroundColor);
     text-align: center;
+    text-indent: 0;
 }

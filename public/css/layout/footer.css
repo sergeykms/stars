@@ -5,4 +5,7 @@
     color: var(--textColorMenuSidebar);
     font-family: var(--navigateFontFamily), Arial, sans-serif;
     font-size: 1.3rem;
+    line-height: 1.4rem;
+    text-align: left;
+    text-indent: 0;
 }

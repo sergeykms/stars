@@ -25,3 +25,9 @@
     background-color: var(--appMainColor);
 }
 
+/*@media screen and (max-width: 1024px) {*/
+/*    .sidebar__navigate {*/
+/*        display: none;*/
+/*    }*/
+/*    !*width: calc(90% + (70 - 90) * ((100vw - 700px) / (1920 - 700)));*!*/
+/*}*/

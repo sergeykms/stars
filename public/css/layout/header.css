@@ -31,10 +31,13 @@
 .header__user-name {
     margin: 0;
     padding: 0;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
     color: var(--backgroundColor);
     align-self: center;
-    font-family: var(--navigateFontFamily), Arial, sans-serif;
     font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-indent: 0;
+    text-align: left;
 }
 
 .header__user-menu {
@@ -50,9 +53,13 @@
 }
 
 .header__user-menu-item {
+    font-family: var(--mainFontFamily), Arial, sans-serif;
     font-size: 1rem;
+    line-height: 1.4rem;
     font-weight: 400;
     color: var(--headerColor);
+    text-align: left;
+    text-indent: 0;
 }
 
 .header__user-menu-item_bold {

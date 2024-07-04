@@ -2,6 +2,7 @@
 @import "footer.css";
 @import "header.css";
 @import "sidebar.css";
+@import "main-menu.css";
 
 .layout {
     margin: 0;
