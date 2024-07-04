@@ -25,6 +25,7 @@ return new class extends Migration
             $table->date('release_date')->nullable(true);
             $table->string('script', 100)->nullable(true);
             $table->integer('timing')->nullable(true);
+            $table->string('episode')->nullable(true);
         });
     }
 
