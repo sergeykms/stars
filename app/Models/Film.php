@@ -21,5 +21,6 @@ class Film extends Model
         'timing',
         'avatar',
         'avatar_min',
+        'episode',
     ];
 }
