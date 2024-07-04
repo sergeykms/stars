@@ -1,4 +1,7 @@
 .tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 0;
     padding: .5rem;
     background-color: var(--appMainColor);
@@ -21,16 +24,28 @@
     transition: all ease .2s;
 }
 
-.tile__inner-block {
+.tile__image-block {
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    /*border: solid 1px var(--backgroundCardColor);*/
+}
+
+.tile__text-block {
     display: flex;
     margin: 0;
     padding: .5rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
     border: solid 1px var(--backgroundCardColor);
 }
+
 .tile__text {
     margin: 0;
     padding: 0;

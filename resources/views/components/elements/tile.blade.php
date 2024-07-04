@@ -1,7 +1,10 @@
-@props(['link' => '$link'])
+{{--@props(['link' => '$link',--}}
+{{--'image' => '$image'--}}
+{{--])--}}
 
 <a class="tile" href="{{$link}}">
-    <div class="tile__inner-block">
+    <img class="tile__image-block" src="{{ $image }}" alt=""/>
+    <div class="tile__text-block">
         <p class="tile__text">{{ $slot }}</p>
     </div>
 </a>

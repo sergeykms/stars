@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    public function register(Request $request)
+    public function register(Request $request): \Illuminate\Http\RedirectResponse
     {
         // Валидация
         $fields = $request->validate([
@@ -24,10 +24,10 @@ class AuthController extends Controller
         Auth::login($user);
 
         // Редирект
-        return redirect()->intended('/');
+        return redirect()->intended('/main-menu');
     }
 
-    public function login(Request $request)
+    public function login(Request $request): \Illuminate\Http\RedirectResponse
     {
         // Валидация
         $fields = $request->validate([
@@ -37,7 +37,7 @@ class AuthController extends Controller
 
         // Авторизация
         if (Auth::attempt($fields, $request->get('remember'))) {
-            return redirect()->intended('/');
+            return redirect()->intended('/main-menu');
         } else {
             return redirect()->route('login')->withErrors([
                 'failed' => 'Пользователь с такими учетными данным не найден',
@@ -45,7 +45,7 @@ class AuthController extends Controller
         }
     }
 
-    public function logout(Request $request)
+    public function logout(Request $request): \Illuminate\Foundation\Application|\Illuminate\Routing\Redirector|\Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse
     {
         Auth::logout();
         $request->session()->invalidate();

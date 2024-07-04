@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome')->name('welcome');
 
 Route::middleware('auth')->group(function () {
+    Route::view('/main-menu', 'components/main-menu')->name('main-menu');
+
     Route::get('/settings', [SettingsConrtroller::class, 'index'])->name('settings');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/admin', [AdminController::class, 'index'])->name('admin');
