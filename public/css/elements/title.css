@@ -1,6 +1,6 @@
 .elements-title {
     margin: 0;
-    padding: 1rem;
+    padding: 0;
     font-family: var(--mainFontFamily), Arial, sans-serif;
     color: var(--appMainColor);
     font-size: 2.5rem;

@@ -3,7 +3,7 @@
         <x-layout.sidebar/>
     </div>
 
-    <div style="grid-row: 1/2; grid-column: 2/3">
+    <div class="home_block">
         {{ $slot }}
     </div>
 </div>

@@ -22,10 +22,7 @@ $text = '
 ?>
 <x-layout>
     <x-home>
-{{--        <x-elements.title>Планеты</x-elements.title>--}}
-        <div class="home__block">
-            <?= $text ?>
-        </div>
-
+        {{--        <x-elements.title>Планеты</x-elements.title>--}}
+        <?= $text ?>
     </x-home>
 </x-layout>
