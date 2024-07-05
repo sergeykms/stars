@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    color: var(--textColorMenuSidebar);
+    color: var(--appMainColor);
     font-family: var(--navigateFontFamily), Arial, sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -17,7 +17,7 @@
 }
 
 .sidebar__item:hover {
-    color: var(--testColor);
+    color: var(--mainAccentColor);
 }
 
 .sidebar__item_active {

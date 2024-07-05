@@ -1,9 +1,12 @@
-
-
 .test {
-    color: var(--headerColor);
+    color: #6a1a21;
+    font-size: 40px;
     /*font-family: var(--mainFontFamily), Arial, sans-serif;*/
     font-family: var(--navigateFontFamily), Arial, sans-serif;
+}
+
+html {
+    font-size: 16px;
 }
 
 .root {
@@ -23,11 +26,12 @@ h1 {
 h2 {
     margin: 0;
     padding: 1rem 0;
+    font-family: var(--mainFontFamily), Arial, sans-serif;
     color: var(--appMainColor);
     font-size: 2rem;
-    font-family: var(--mainFontFamily), Arial, sans-serif;
-    text-align: left;
+    line-height: 2rem;
     font-weight: 700;
+    text-align: left;
     text-indent: 2rem;
 }
 
@@ -42,7 +46,21 @@ p {
     text-indent: 2rem;
 }
 
-
+.app__button {
+    margin: 0;
+    padding: .7rem;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    background-color: var(--buttonEnabledColor);
+    color: var(--buttonTextColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    border: 1px solid var(--borderColor);
+    border-radius: .3rem;
+    cursor: pointer;
+}
 
 .g__block-1 {
     margin: 0;

@@ -1,7 +1,7 @@
 <x-layout>
     <x-home>
         <x-elements.title>Фильмы</x-elements.title>
-        <a class="btn btn-primary" href="{{ route('films.create') }}">Создать</a>
+        <a class="btn btn-primary app__button" href="{{ route('films.create') }}">Создать</a>
         <ul class="film-index">
             @foreach($films as $film)
                 <a class="film-index__item">

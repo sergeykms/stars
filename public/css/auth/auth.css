@@ -28,13 +28,13 @@
 }
 
 .auth__title {
-    font-family: var(--mainFontFamily), Arial, sans-serif;
-    color: var(--appMainColor);
     margin: 0;
     padding: 0;
-    font-weight: 600;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
     font-size: 2rem;
     line-height: 2rem;
+    font-weight: 600;
     text-align: center;
     text-indent: 0;
 }
@@ -42,8 +42,8 @@
 .auth__name {
     margin: 1rem 0 .4rem;
     padding: 0;
-    font-family: var(--mainFontFamily), Arial, sans-serif;
-    color: var(--mainColor);
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
     font-size: 1.3rem;
     line-height: 1.5rem;
     font-weight: 700;
@@ -71,19 +71,7 @@
 }
 
 .auth__submit {
-    margin: 1.2rem 0 0 0;
-    padding: .7rem;
     width: 100%;
-    outline: none;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-    text-align: center;
-    background-color: var(--buttonEnabledColor);
-    color: var(--buttonTextColor);
-    border: 1px solid var(--borderColor);
-    border-radius: .3rem;
-    cursor: pointer;
 }
 
 .auth__submit:hover {
@@ -96,11 +84,11 @@
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.5rem;
-    color: var(--textColorLink);
+    color: var(--mainAccentColor);
 }
 
 .auth__link:visited {
-    color: var(--textColorLink);
+    color: var(--mainAccentColor);
 }
 
 .auth__input-error {

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     align-self: center;
-    color: var(--textColorMenuSidebar);
+    color: var(--appMainColor);
     font-family: var(--navigateFontFamily), Arial, sans-serif;
     font-size: 1.3rem;
     line-height: 1.4rem;

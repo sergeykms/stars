@@ -4,13 +4,17 @@
 
         <form class="row g-3 container" method="POST" action="{{ route('films.store') }}">
             @csrf
-            <div class="col-md-6">
+            <div class="col-12">
                 <label for="name" class="form-label">Наименование</label>
                 <input type="text" class="form-control" id="name" name="name">
             </div>
             <div class="col-md-6">
+                <label for="cycle" class="form-label">Цикл</label>
+                <input type="text" class="form-control" id="cycle" name="cycle">
+            </div>
+            <div class="col-md-6">
                 <label for="episode" class="form-label">Эпизод</label>
-                <input type="text" class="form-control" id="episode" name="episode">
+                <input type="number" class="form-control" id="episode" name="episode">
             </div>
             <div class="col-12">
                 <label for="description" class="form-label">Краткое содержание</label>
@@ -52,9 +56,16 @@
                 <label for="avatar_min" class="form-label">Изображение маленькое</label>
                 <input type="text" class="form-control" id="avatar_min" name="avatar_min">
             </div>
-
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <label for="about" class="form-label">История создания</label>
+                <textarea class="form-control" name="about" id="about" rows="20"></textarea>
+            </div>
+            <div class="col-12">
+                <label for="content" class="form-label">Краткий пересказ сюжета</label>
+                <textarea class="form-control" name="content" id="content" rows="20"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary app__button">Сохранить</button>
             </div>
         </form>
     </x-home>

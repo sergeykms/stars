@@ -36,7 +36,7 @@
             </div>
             <button type="submit"
                     aria-label="submit"
-                    class="auth__submit">
+                    class="app__button auth__submit">
                 Войти
             </button>
             <p class="auth__name">Ещё не зарегистрированы?&nbsp;

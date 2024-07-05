@@ -6,38 +6,28 @@
 @import "global.css";
 @import "elements/index.css";
 @import "pages/index.css";
+@import "admin/index.css";
 
 :root {
     /*Цвета*/
 
-    --testColor: #2f839e;
+    /*Основные цвета*/
     --appMainColor: #492e20; /*Основной цвет приложения*/
     --mainTextColor: #201708; /*Цвет основного текста*/
-    --mainAccentColor: #0a2079; /*Цвет акцентного текста*/
+    --borderColor: #4d4035; /*Цвет бордюра*/
 
-    --backgroundCardColor: #e7e1db; /*Цвет бэкграунда карточки*/
-
-    --mainColor: #4d4035; /*Главный цвет*/
-    --textColorLink: #215be3; /*Цвет ссылок*/
-    --textColorMenuSidebar: var(--appMainColor); /*Цвет текста меню сайдбара*/
-
-    --backgroundColor: #faf7f2; /*Цвет заднего фона*/
-    --mainMenuColor: #4d3d26; /*Цвет текста меню*/
-    --borderColor: var(--mainColor); /*Цвет бордюра*/
-
-    /*Хедер*/
-    --headerColor: #5d4822; /*Цвет текста хедера*/
-
-    /*Error*/
+    /*Акцентные цвета*/
+    --mainAccentColor: #1688a2; /*Цвет акцентного текста*/
     --errorTextColor: #d90f2f; /*Цвет сообщения об ошибках*/
 
-    /*Кнопки*/
-    --buttonEnabledColor: #704510; /*Цвет активной кнопки*/
-    --buttonDisabledColor: #faf7f2; /*Цвет неактивной кнопки*/
-    --buttonTextColor: #faf7f2; /*Цвет текста кнопки*/
+    /*Цвета бекграунда*/
+    --backgroundColor: #faf7f2; /*Цвет заднего фона*/
+    --backgroundCardColor: #e7e1db; /*Цвет бэкграунда карточки*/
 
-    /*PopupDialogue*/
-    --backgroundPopupColor: #f8f8f8; /*Цвет заднего фона PopupDialogue*/
+     /*Кнопки*/
+    --buttonEnabledColor: var(--appMainColor); /*Цвет активной кнопки*/
+    --buttonDisabledColor: #faf7f2; /*Цвет неактивной кнопки*/
+    --buttonTextColor: var(--backgroundColor); /*Цвет текста кнопки*/
 
     /*Типографика*/
     --mainFontFamily: Verona, Arial, sans-serif;
@@ -50,6 +40,3 @@
     --win-large: 1440px;
 }
 
-html {
-    font-size: 16px;
-}

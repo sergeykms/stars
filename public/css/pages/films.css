@@ -90,7 +90,7 @@
     grid-column: 2/3;
     width: 5rem;
     height: 2rem;
-    background-color: var(--testColor);
+    background-color: var(--mainAccentColor);
     border: solid 1px var(--borderColor);
     z-index: 100;
     justify-self: flex-end;

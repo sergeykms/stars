@@ -54,19 +54,20 @@
 
 .header__user-menu-item {
     font-family: var(--mainFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
     font-size: 1rem;
     line-height: 1.4rem;
-    font-weight: 400;
-    color: var(--headerColor);
+    font-weight: 500;
     text-align: left;
     text-indent: 0;
+    justify-content: left;
 }
 
 .header__user-menu-item_bold {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .header__link {
@@ -83,7 +84,7 @@
 }
 
 .header__link_active {
-    color: var(--testColor);
+    color: var(--mainAccentColor);
 }
 
 

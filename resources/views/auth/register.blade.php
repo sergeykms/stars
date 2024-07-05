@@ -35,7 +35,7 @@
                placeholder="повторите пароль"/>
         <button type="submit"
                 aria-label="submit"
-                class="auth__submit">
+                class="app__button auth__submit">
             Зарегистрироваться
         </button>
         <p class="auth__name">Уже зарегистрированы?&nbsp;

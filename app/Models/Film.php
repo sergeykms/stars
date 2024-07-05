@@ -22,5 +22,8 @@ class Film extends Model
         'avatar',
         'avatar_min',
         'episode',
+        'cycle',
+        'about',
+        'content',
     ];
 }

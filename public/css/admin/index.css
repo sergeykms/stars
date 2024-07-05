@@ -1,0 +1,10 @@
+@import "user-list.css";
+
+.admin {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around
+}

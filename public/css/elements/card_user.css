@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: solid 1px var(--borderColor);
-    width: 24rem;
+    max-width: 24rem;
     text-decoration: none;
     cursor: pointer;
 }
