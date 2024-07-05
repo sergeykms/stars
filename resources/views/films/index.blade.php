@@ -6,7 +6,7 @@
         <ul class="film-index">
 
             @foreach($films as $film)
-                <li style="width: 35rem">
+                <li style="max-width: 35rem">
                     <a class="film-index__item">
                         <div class="film-index__menu">
                             <a href="{{ route('films.edit', $film->id) }}" class="film-index__menu-button">Edit</a>
