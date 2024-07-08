@@ -1,7 +1,7 @@
 <x-layout>
     <x-home>
         <x-elements.title>Редактирование фильма</x-elements.title>
-        <form class="row g-3 container" method="POST" action="{{ route('films.update', $film->id) }}">
+        <form class="row g-3" method="POST" action="{{ route('films.update', $film->id) }}">
             @csrf
             @method('PUT')
             <div class="col-12">

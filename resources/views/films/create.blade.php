@@ -2,7 +2,7 @@
     <x-home>
         <x-elements.title>Добавление нового фильма</x-elements.title>
 
-        <form class="row g-3 container" method="POST" action="{{ route('films.store') }}">
+        <form class="row g-3" method="POST" action="{{ route('films.store') }}">
             @csrf
             <div class="col-12">
                 <label for="name" class="form-label">Наименование</label>
