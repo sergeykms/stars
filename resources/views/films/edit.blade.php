@@ -20,14 +20,6 @@
                     <input type="text" class="form-control" id="episode" name="episode"
                            value="{{ old('episode', $film->episode) }}">
                 </div>
-                {{--            <div class="col-md-6">--}}
-                {{--                <label for="cycle" class="form-label">Цикл</label>--}}
-                {{--                <input type="text" class="form-control" id="cycle" name="cycle" value="{{ old('name', $film->cycle) }}>--}}
-                {{--            </div>--}}
-                {{--            <div class="col-md-6">--}}
-                {{--                <label for="episode" class="form-label">Эпизод</label>--}}
-                {{--                <input type="number" class="form-control" id="episode" name="episode" value="{{ old('name', $film->episode) }}>--}}
-                {{--            </div>--}}
                 <div class="col-12">
                     <label for="description" class="form-label">Краткое содержание</label>
                     <textarea class="form-control" name="description" id="description"
