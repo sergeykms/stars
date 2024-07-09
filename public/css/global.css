@@ -35,13 +35,42 @@ h2 {
     text-indent: 2rem;
 }
 
+.info__subtitle{
+    margin: 0;
+    padding: .5rem 0;
+    font-family: var(--mainFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: underline;
+    text-indent: 2rem;
+
+}
+
+.info__text {
+    margin: 0;
+    padding: 0;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    word-break: normal;
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
 p {
     margin: 0;
-    font-family: var(--mainFontFamily), Arial, sans-serif;
-    color: var(--mainTextColor);
-    font-size: 1.3rem;
+    padding: 0;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 1.5rem;
     line-height: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
     word-break: normal;
     hyphens: auto;
     text-align: justify;
