@@ -55,7 +55,7 @@
 }
 
 .info__button::after {
-    content: "\2B9E";
+    content: "\22D9";
     font-size: 1.3rem;
     margin: 0 0 0 -1rem;
     padding: 0;
