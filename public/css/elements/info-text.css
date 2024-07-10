@@ -1,0 +1,68 @@
+.info__block {
+    margin: 0;
+    padding: 0;
+}
+
+.info__title {
+    margin: 0;
+    padding: 0;
+    font-family: var(--mainFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.info__subtitle {
+    margin: 0;
+    padding: .5rem 2rem;
+    font-family: var(--mainFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.info__text {
+    margin: 0;
+    padding: 0;
+    font-family: var(--navigateFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    word-break: normal;
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.info__button {
+    visibility: visible;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    font-family: var(--mainFontFamily), Arial, sans-serif;
+    color: var(--appMainColor);
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+    background-color: var(--backgroundColor);
+}
+
+.info__button::after {
+    content: "\2B9E";
+    font-size: 1.3rem;
+    margin: 0 0 0 -1rem;
+    padding: 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+    .info__subtitle {
+        text-align: center;
+    }
+}
